@@ -2,6 +2,7 @@ package com.tmall.pojo;
 
 public class Category {
     private Integer id;
+
     private String name;
 
     public Integer getId() {
