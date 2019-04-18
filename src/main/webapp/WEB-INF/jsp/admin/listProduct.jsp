@@ -46,7 +46,7 @@
 
 
     <div class="listDataTableDiv">
-        <table class="table table-striped table-bordered">
+        <table class="table table-striped table-bordered table-hover">
             <thead>
                 <tr class="success">
                     <th>ID</th>
@@ -72,10 +72,10 @@
                     <td>${p.originalPrice}</td>
                     <td>${p.promotePrice}</td>
                     <td>${p.stock}</td>
-                    <td></td>
+                    <td><a href="admin_productImage_list?pid=${p.id}"><span class="glyphicon glyphicon-picture"></span> </a> </td>
                     <td><span class="glyphicon glyphicon-th-list"></span></td>
                     <td><a href="admin_product_edit?id=${p.id}"><span class="glyphicon glyphicon-edit"></span></a> </td>
-                    <td><a href="admin_product_delete?id=${p.id}"><span class="glyphicon glyphicon-trash"></span></a> </td>
+                    <td><a deleteLink="true" href="admin_product_delete?id=${p.id}"><span class="glyphicon glyphicon-trash"></span></a> </td>
                 </tr>
             </c:forEach>
             </tbody>

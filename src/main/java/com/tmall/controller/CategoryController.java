@@ -60,7 +60,7 @@ public class CategoryController {
         categoryService.delete(id);
 
         //同时删除对应图片
-        File imageFolder = new File(session.getServletContext().getRealPath("img/category"));
+        String imageFolder = session.getServletContext().getRealPath("img/category");
         File file = new File(imageFolder, id+".jpg");
         file.delete();
 
