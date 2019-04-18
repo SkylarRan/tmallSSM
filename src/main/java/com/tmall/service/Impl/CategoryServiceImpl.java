@@ -4,7 +4,6 @@ import com.tmall.mapper.CategoryMapper;
 import com.tmall.pojo.Category;
 import com.tmall.pojo.CategoryExample;
 import com.tmall.service.CategoryService;
-import com.tmall.util.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
