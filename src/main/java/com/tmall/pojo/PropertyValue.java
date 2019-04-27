@@ -3,11 +3,22 @@ package com.tmall.pojo;
 public class PropertyValue {
     private Integer id;
 
-    private Integer pid;
+    private Integer pid;//商品id
 
-    private Integer ptid;
+    private Integer ptid;//属性id
 
     private String value;
+
+    //非数据库属性
+    private Property property;
+
+    public Property getProperty() {
+        return property;
+    }
+
+    public void setProperty(Property property) {
+        this.property = property;
+    }
 
     public Integer getId() {
         return id;
